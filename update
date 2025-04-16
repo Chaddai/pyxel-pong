@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Pack the app folder and app/app.py into app.pyxapp
+pyxel package app app.py
+
+# Convert the app.pyxapp into app.html
+pyxel app2html app.pyxapp
+
+echo "Packaging and conversion completed. Output: app.html"
